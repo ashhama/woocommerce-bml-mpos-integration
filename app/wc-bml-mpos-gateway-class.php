@@ -201,12 +201,11 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
         //initialize the client
         $client = new Client($api_key, $app_id, $environmentType);
 
-        $json = ["currency" => $currency, "amount" => $amount, // 10.00 MVR
-        "redirectUrl" => $checkOutPaymentUrl, // Optional redirect after payment completion
-        "localId" => $customer_order->get_id() , // Optional redirect after payment completion
-        "customerReference" => $customer_order->get_id() . "_" . $validationSignature, // Optional redirect after payment completion
+        $json = ["currency" => $currency, "amount" => $amount,
+        "redirectUrl" => $checkOutPaymentUrl,
+        "localId" => $customer_order->get_id() ,
+        "customerReference" => $customer_order->get_id() . "_" . $validationSignature,
         "redirectUrl" => $checkOutPaymentUrl
-        // Optional redirect after payment completion
         ];
 
         //create the transaction
