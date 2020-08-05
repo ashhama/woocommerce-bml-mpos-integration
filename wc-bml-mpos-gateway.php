@@ -11,7 +11,6 @@ Version: 1.0
 
 require_once('vendor/autoload.php');
 require_once('app/wc-bml-mpos-gateway-init.php');
-require_once('app/wc-bml-mpos-gateway-receipt.php');
 require_once('app/wc-bml-mpos-gateway-menu-column.php');
 require_once('app/functions.php');
 

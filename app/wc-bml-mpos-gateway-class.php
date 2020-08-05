@@ -110,13 +110,6 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
                 'description' => __('Set the security Level of the Gateway.', 'woocommerce_bml_mpos_integration') ,
                 'default' => 2,
             ) ,
-            'print_receipt_button' => array(
-                'title' => __('Print Receipt Button (Experimental)', 'woocommerce_bml_mpos_integration') ,
-                'label' => __('Show Print Receipt Button', 'woocommerce_bml_mpos_integration') ,
-                'type' => 'checkbox',
-                'description' => __('Show Print Receipt Button in Order Page and Thankyou Page', 'woocommerce_bml_mpos_integration') ,
-                'default' => 'no',
-            ) ,
             'environment' => array(
                 'title' => __('BML mPOS Test Mode', 'woocommerce_bml_mpos_integration') ,
                 'label' => __('Enable Test Mode', 'woocommerce_bml_mpos_integration') ,
