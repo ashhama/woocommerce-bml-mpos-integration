@@ -3,7 +3,7 @@ A 3rd party plugin to integrate woocommerce payments with the BML mPOS gateway (
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running development and testing purposes. To get started, download this project as a zip file. Project will be available in Wordpress plugin repository soon.
+These instructions will get you a copy of the project up and running for development and testing purposes. To get started, download this project as a zip file. Project will be available in Wordpress plugin repository soon.
 
 ### Prerequisites
 
