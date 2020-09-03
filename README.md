@@ -17,6 +17,8 @@ These instructions will get you a copy of the project up and running development
 
 1. Download the plugin. (Downloading the whole repo from the download button above will work).
 2. Go to plugins -> Add New in the sidebar of the wordpress Admin Page.
+![Go to Add New Sub Section of Plugin Menu](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/add-new.JPG?raw=true)
+
 3. Upload the downloaded plugin Zip File and Activate.
 
 
@@ -38,7 +40,7 @@ Transaction IDs generated for payment of your woocommerce order will also now be
 
 * This project and its developers are not in anyway related to Bank of Maldives.
 * Having tested the plugin with numerous configurations and numerous scenarios and passed all tests, no developer can guarantee that their software is 100% free of bugs. We kindly request to update the developers if any bugs are observed.
-* We cannot also take responsibility for any issues this plugin may cause within your deployed software. We also cannot take responsibility on any impact this plugin cause on your business. Please refer to our licence files for more details.
+* We cannot also take responsibility for any issues this plugin may cause within your deployed software. We also cannot take responsibility on any impact this plugin cause on your business. Please refer to our [LICENSE.md](LICENSE.md) files for more details.
 * This plugin is only an intermediary between Woocommerce and BML Payment Gateway. Hence this is the scope of the project. Utilize the available woocommerce configurations and additional plugins to add and change features of your store. This includes customer side receipt printing, redirection to the defined success page after payment success and redirection to the defined cancel page after payment cancellation.
 
 
