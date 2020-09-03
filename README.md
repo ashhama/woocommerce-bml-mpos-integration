@@ -22,19 +22,35 @@ These instructions will get you a copy of the project up and running development
 
 3. Upload the downloaded plugin Zip File and Activate.
 
+   ![Upload and activate](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/upload-plugin.JPG?raw=true)
 
 ## Deployment
 
 1. Go to woocommerce settings in the sidebar of the wordpress Admin Page.
+
+   ![Woocommerce settings](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/woocommerce-settings.JPG?raw=true)
+
 2. Go to the 'Payments' tab that appears in the horizontal bar
-3. Turn on the new 'BML mPOS Payment' payment option that has now appeared. Then go to 'Manage'
+
+   ![Woocommerce settings](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/payments.JPG?raw=true)
+
+3. Turn on the new 'BML mPOS Payment' payment option that has now appeared. Then go to 'Manage'.
+
+   ![Woocommerce payment settings](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/woocommerce-payments-settings.JPG?raw=true)
+
 4. Enter the API login and key provided to you by BML. Customize anymore desired settings and then save.
+
+   ![Woocommerce payment settings](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/bml-options.jpg?raw=true)
 
 
 A payment method should now show in the checkout page of your store.
 
+   ![Checkout Options](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/checkout-options.JPG?raw=true)
+
 
 Transaction IDs generated for payment of your woocommerce order will also now be visible in the 'Orders' Pages
+
+   ![Transaction ID in order](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/order-transaction-id.JPG?raw=true)
 
 
 ## Notes
