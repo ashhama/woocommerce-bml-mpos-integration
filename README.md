@@ -17,6 +17,7 @@ These instructions will get you a copy of the project up and running development
 
 1. Download the plugin. (Downloading the whole repo from the download button above will work).
 2. Go to plugins -> Add New in the sidebar of the wordpress Admin Page.
+
 ![Go to Add New Sub Section of Plugin Menu](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/images/add-new.JPG?raw=true)
 
 3. Upload the downloaded plugin Zip File and Activate.
