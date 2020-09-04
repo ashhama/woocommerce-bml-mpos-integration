@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: WC BML mPOS Gateway Integration
+Plugin Name: BML mPOS Gateway Integration for WooCommerce
 Plugin URI:
 Author: Ashham
 WC tested up to: 4.3.1
