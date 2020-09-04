@@ -1,4 +1,4 @@
-Woocommerce BML mPOS Gateway Integration - This is a plugin to integrate woocommerce payments with the BML mPOS gateway. Please note that this software and its developers are in no way related to Bank of Maldives.
+BML mPOS Gateway Integration for Woocommerce - This is a plugin to integrate woocommerce payments with the BML mPOS gateway. Please note that this software and its developers are in no way related to Bank of Maldives.
 
 Copyright (C) 2020  Ashham Abdulla
 
