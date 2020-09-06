@@ -45,7 +45,7 @@ These instructions will get you a copy of the project up and running for develop
 
 A payment method should now show in the checkout page of your store.
 
-   ![Checkout Options](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/misc/assets/checkout-options.JPG?raw=true)
+   ![Checkout Options](https://github.com/ashhama/woocommerce-bml-mpos-integration/blob/master/assets/images/checkout-options.JPG?raw=true)
 
 
 Transaction IDs generated for payment of your woocommerce order will also now be visible in the 'Orders' Pages
