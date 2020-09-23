@@ -1,4 +1,4 @@
-=== BML mPOS Gateway Integration for WooCommerce ===
+=== mPOS Gateway Integration for BML and WooCommerce ===
 Contributors: ashhama
 Tags: payment gateway, payment gateway for BML, Maldives, BML payment gateway, BML mPOS
 Requires at least: 4.9
