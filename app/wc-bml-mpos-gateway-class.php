@@ -21,8 +21,6 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
         $this->method_description = __("BML mPOS Payment Gateway Plug-in for WooCommerce (This Plugin is developed by a 3rd party and is in no way related to Bank of Maldives)", 'woocommerce_bml_mpos_integration');
         // Title in the vertical tab
         $this->title = __("BML mPOS", 'woocommerce_bml_mpos_integration');
-        //icon
-        $this->icon = null;
         //Will not have fields on user side, routed to gateway for payment
         $this->has_fields = false;
 
@@ -49,6 +47,7 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
             'check_bml_response_message'
         ));
 
+    
         // Save settings
         if (is_admin())
         {
@@ -57,6 +56,16 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
                 'process_admin_options'
             ));
         }
+
+        //display icon
+        $displayIcon = ($this->icon_at_checkout == "yes") ? 'TRUE' : 'FALSE';
+        $displayIconType = ("FALSE" == $displayIcon) ? null : apply_filters( 'woocommerce_gateway_icon', plugin_dir_url( __FILE__ ) . 'icons/Payment Gateway logos_1.png' );
+
+
+        //icon
+        $this->icon = $displayIconType;
+
+
 
     }
 
@@ -87,6 +96,12 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
                 'desc_tip' => __('Payment title of checkout process.', 'woocommerce_bml_mpos_integration') ,
                 'default' => __('Payment via credit card.', 'woocommerce_bml_mpos_integration') ,
                 'css' => 'max-width:450px;'
+            ) ,
+            'icon_at_checkout' => array(
+                'title' => __('Display Icon at checkout', 'woocommerce_bml_mpos_integration') ,
+                'label' => __('Display the BML Logo alongside accepted payment methods during checkout', 'woocommerce_bml_mpos_integration') ,
+                'type' => 'checkbox',
+                'default' => 'yes',
             ) ,
             'api_login' => array(
                 'title' => __('BML mPOS API Login', 'woocommerce_bml_mpos_integration') ,
