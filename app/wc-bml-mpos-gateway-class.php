@@ -47,7 +47,7 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
             'check_bml_response_message'
         ));
 
-    
+
         // Save settings
         if (is_admin())
         {
@@ -163,7 +163,7 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
 
         $customer_order = new WC_Order($order_id);
 
-        $amount = round(($customer_order->get_subtotal() * 100) , 0);
+        $amount = round(($customer_order->get_total() * 100) , 0);
         $currency = $customer_order->get_currency();
         $signature = sha1('amount=' . $amount . '&currency=' . $currency . '&apiKey=' . $api_key, false);
         $securitysignature = sha1($customer_order->get_data() ['cart_hash'] . wp_salt() , false);
@@ -183,7 +183,7 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
             $transactionVerification = $client
                 ->transactions
                 ->get($customer_order->get_transaction_id());
-            $verificationAmount = round(($customer_order->get_subtotal() * 100) , 0);
+            $verificationAmount = round(($customer_order->get_total() * 100) , 0);
 
             if ($transactionVerification->amount == $amount && $currency == $transactionVerification->currency && ($transactionVerification->state == "INITIATED" || $transactionVerification->state == 'QR_CODE_GENERATED'))
             {
@@ -289,7 +289,7 @@ class WOOCOMMERCE_BML_MPOS_INTEGRATION extends WC_Payment_Gateway
                 $api_key = $payment_gateway->api_key;
                 $app_id = $payment_gateway->api_login;
 
-                $amount = round(($localWooCommerceOrder->get_subtotal() * 100) , 0);
+                $amount = round(($localWooCommerceOrder->get_total() * 100) , 0);
                 $currency = $localWooCommerceOrder->get_currency();
 
                 $signature = sha1('amount=' . $amount . '&currency=' . $currency . '&apiKey=' . $api_key, false);
