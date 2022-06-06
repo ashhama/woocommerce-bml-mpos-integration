@@ -19,6 +19,21 @@ class Transaction
     private $isPreAuthorization;
 
     /**
+     * @var
+     */
+    private $provider;
+
+    /**
+     * @var
+     */
+    private $redirectUrl;
+
+    /**
+     * @var
+     */
+    private $localId;
+
+    /**
      * @return int
      */
     public function getAmount()
@@ -51,6 +66,70 @@ class Transaction
     }
 
     /**
+     * @return string
+     */
+    public function getisPreAuthorization(): string
+    {
+        return $this->isPreAuthorization;
+    }
+
+    /**
+     * @param string $isPreAuthorization
+     */
+    public function setIsPreAuthorization(string $isPreAuthorization)
+    {
+        $this->isPreAuthorization = $isPreAuthorization;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProvider()
+    {
+        return $this->provider;
+    }
+
+    /**
+     * @param mixed $provider
+     */
+    public function setProvider($provider)
+    {
+        $this->provider = $provider;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRedirectUrl()
+    {
+        return $this->redirectUrl;
+    }
+
+    /**
+     * @param mixed $redirectUrl
+     */
+    public function setRedirectUrl($redirectUrl)
+    {
+        $this->redirectUrl = $redirectUrl;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLocalId()
+    {
+        return $this->localId;
+    }
+
+    /**
+     * @param mixed $localId
+     */
+    public function setLocalId($localId)
+    {
+        $this->localId = $localId;
+    }
+
+    /**
      * @param array $json
      * @return $this
      */
@@ -65,6 +144,18 @@ class Transaction
 
         if (array_key_exists('isPreAuthorization', $json)) {
             $this->isPreAuthorization = $json['isPreAuthorization'];
+        }
+
+        if (array_key_exists('redirectUrl', $json)) {
+            $this->redirectUrl = $json['redirectUrl'];
+        }
+
+        if (array_key_exists('provider', $json)) {
+            $this->provider = $json['provider'];
+        }
+
+        if (array_key_exists('localId', $json)) {
+            $this->localId = $json['localId'];
         }
 
         return $this;

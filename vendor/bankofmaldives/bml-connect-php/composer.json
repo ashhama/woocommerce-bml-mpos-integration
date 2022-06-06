@@ -4,7 +4,7 @@
     "keywords": ["bml", "bankofmaldives", "pay", "alipay", "php", "api", "maldives", "card payments"],
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "~6.0|~7.0",
         "php": ">= 7.0"
     },
     "autoload": {
