@@ -1,0 +1,19 @@
+Woocommerce BML mPOS Gateway Integration - This is a plugin to integrate woocommerce payments with the BML mPOS gateway. Please note that this software and its developers are in no way related to Bank of Maldives.
+
+Copyright (C) 2020  Ashham Abdulla
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Author Name: Ashham Abdulla
+Author Email: ashham_@hotmail.com
+Author Phone: +960 9971502
