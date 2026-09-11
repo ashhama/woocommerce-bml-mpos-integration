@@ -1,0 +1,19 @@
+/* Scope the legacy checkout banner to this gateway only. */
+.woocommerce-checkout #payment label[for="payment_method_woocommerce_bml_mpos_integration"] {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    max-width: calc(100% - 32px);
+    vertical-align: middle;
+}
+.woocommerce-checkout #payment label[for="payment_method_woocommerce_bml_mpos_integration"] img {
+    display: block;
+    width: 320px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    float: none !important;
+    margin: 0 !important;
+    object-fit: contain;
+}
